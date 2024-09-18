@@ -1,0 +1,27 @@
+.home {
+    height: 100vh; /* גובה של 100% מהמסך */
+    width: 100%; /* רוחב של 100% */
+    background-size: cover; /* הכנס את התמונה כך שתכסה את כל הרקע */
+    background-position: center; /* מיקום התמונה במרכז */
+    display: flex; /* השתמש ב-flexbox למרכז את התוכן */
+    flex-direction: column; /* סידור התוכן לעמודה */
+    justify-content: center; /* מרכז את התוכן במאונך */
+    align-items: center; /* מרכז את התוכן במאוזן */
+    color: white; /* צבע הטקסט */
+    text-shadow: 1px 1px 2px black; /* הוספת צל לטקסט */
+  }
+  .start-btn{
+    position: absolute;
+    background-color: #e50b0b;
+    border: none;
+    width: 10vw;
+    height: 5vh;
+    right: 15vw;
+    bottom: 38vh;
+    border-radius: 9px;
+  }
+  .start-txt{
+    color: white;
+    text-decoration: none;
+    font-size:24px;
+  }

@@ -8,12 +8,11 @@ import { Link } from 'react-router-dom'; // הוסף את הייבוא של Link
 function Home() {
   return (
     <div className='home' style={{ backgroundImage: `url(${image})` }}>
-      <h2>Home Page</h2>
-      <ul>
-        <li>
-          <Link to="/first">First</Link>
-        </li>
-      </ul>
+        <h1>Try to escape that room</h1>
+        <button className='start-btn'>
+          <Link className='start-txt' to="/first">start</Link>
+        </button>
+    
     </div>
   );
 }
