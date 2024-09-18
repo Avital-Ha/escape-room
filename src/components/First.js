@@ -1,9 +1,7 @@
-import React from "react";
+import React from 'react';
 
-export default function First() {
-    return (
-        <div className="header">
-            <div className="logo-title">first</div>
-        </div>
-    );
+function First() {
+  return <h2>First Page</h2>;
 }
+
+export default First;
