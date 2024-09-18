@@ -4,10 +4,10 @@ import Home from './components/Home';
 import First from './components/First';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-function App() {
+export default function App() {
   return (
-    <Router>
-      <div className="App"> 
+    <Router basename="/escape-room"> {/* Set the basename */}
+      <div className="App">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/first" element={<First />} />
@@ -16,5 +16,3 @@ function App() {
     </Router>
   );
 }
-
-export default App;
