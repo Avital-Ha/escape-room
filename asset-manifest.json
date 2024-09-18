@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/escape-room/static/css/main.f855e6bc.css",
-    "main.js": "/escape-room/static/js/main.db482b8c.js",
+    "main.css": "/escape-room/static/css/main.8a7353ae.css",
+    "main.js": "/escape-room/static/js/main.94abee49.js",
     "static/js/453.0187c4d0.chunk.js": "/escape-room/static/js/453.0187c4d0.chunk.js",
     "static/media/abandoned-morgue-psychiatric-hospital.jpg": "/escape-room/static/media/abandoned-morgue-psychiatric-hospital.398a429676afbb1476d0.jpg",
+    "static/media/firstScene.jpg": "/escape-room/static/media/firstScene.55737eb7d74a0e274fd5.jpg",
+    "static/media/Butcherman-Regular.woff": "/escape-room/static/media/Butcherman-Regular.cbe40f9cc49f2630f244.woff",
     "static/media/logo.svg": "/escape-room/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/escape-room/index.html",
-    "main.f855e6bc.css.map": "/escape-room/static/css/main.f855e6bc.css.map",
-    "main.db482b8c.js.map": "/escape-room/static/js/main.db482b8c.js.map",
+    "main.8a7353ae.css.map": "/escape-room/static/css/main.8a7353ae.css.map",
+    "main.94abee49.js.map": "/escape-room/static/js/main.94abee49.js.map",
     "453.0187c4d0.chunk.js.map": "/escape-room/static/js/453.0187c4d0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.db482b8c.js"
+    "static/css/main.8a7353ae.css",
+    "static/js/main.94abee49.js"
   ]
 }
