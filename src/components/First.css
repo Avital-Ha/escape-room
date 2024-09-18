@@ -1,0 +1,13 @@
+.first {
+    height: 100vh; /* גובה של 100% מהמסך */
+    width: 100%; /* רוחב של 100% */
+    background-size: cover; /* הכנס את התמונה כך שתכסה את כל הרקע */
+    background-position: center; /* מיקום התמונה במרכז */
+    display: flex; /* השתמש ב-flexbox למרכז את התוכן */
+    flex-direction: column; /* סידור התוכן לעמודה */
+    justify-content: center; /* מרכז את התוכן במאונך */
+    align-items: center; /* מרכז את התוכן במאוזן */
+    color: white; /* צבע הטקסט */
+    text-shadow: 1px 1px 2px black; /* הוספת צל לטקסט */
+  }
+ 
