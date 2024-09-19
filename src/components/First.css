@@ -57,27 +57,12 @@
   font-family: 'Handjet';
   font-size: 3.5vw;
   position: absolute;
-  right: 26vw;
+  right: 35vw;
 }
-.option2{
-  color: chartreuse;
-  font-family: 'Handjet';
-  font-size: 3.5vw;
-  position: absolute;
-  right: 40vw;
-}
+
 .option1Ans{
   position: absolute;
-  width:5vw;
-  height:3vh;
-  border: chartreuse solid 3px;
-  background-color: rgb(70, 69, 69);
-  right:34vw;
-  top:32vh;
-}
-.option2Ans{
-  position: absolute;
-  width:5vw;
+  width:13vw;
   height:3vh;
   border: chartreuse solid 3px;
   background-color: rgb(70, 69, 69);

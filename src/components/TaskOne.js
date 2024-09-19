@@ -12,16 +12,21 @@ function TaskOne() {
 
   const handleChange = (event) => {
     const value = event.target.value;
-    // Allow only numeric input (including negative numbers and commas), with optional spaces
-    if (/^[-\s\d]*,-?[\s\d]*$/.test(value) || value === '') {
-      setInputValue(value);
+    console.log("Current input:", value);
+  
+    // Check if the input contains letters
+    const containsLetters = /[a-zA-Zא-ת]/.test(value);
+    console.log("Contains letters:", containsLetters);
+  
+    if (!containsLetters) {
+      setInputValue(value); // Update state only if the value does not contain letters
+      console.log("Valid input:", value);
+    } else {
+      console.log("Invalid input: contains letters");
     }
   };
+  
 
-  // Handle case where question is not found
-  if (!question) {
-    return <p>שאלה לא נמצאה</p>; // Fallback if no question is found
-  }
 
   // Validation Logic, trimming whitespace
   const trimmedInput = inputValue.replace(/\s+/g, ''); // Remove all spaces
