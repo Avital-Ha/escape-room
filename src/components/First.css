@@ -8,6 +8,79 @@
     justify-content: center; /* מרכז את התוכן במאונך */
     align-items: center; /* מרכז את התוכן במאוזן */
     color: white; /* צבע הטקסט */
-    text-shadow: 1px 1px 2px black; /* הוספת צל לטקסט */
   }
- 
+  .slik {
+    opacity: 0; /* מתחיל לא נראה */
+    width: 9vw;
+    position: absolute;
+    height: 12vh;
+    right: 42.3vw;
+    background-color: transparent;
+    border: none; /* הסרת הבורדר */
+    top:45vh;
+}
+
+.slik:hover {
+    opacity: 1; /* הופך לראה כשעוברים עליו */
+    box-shadow: 0 0 15px rgba(255, 255, 255); /* אפקט זוהר */
+    cursor: pointer;
+}
+
+.task-one{
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  width:60vw;
+  height:70vh;
+  box-shadow: 0 0 15px rgba(255, 255, 255); /* אפקט זוהר */
+  z-index: 1000;
+}
+
+@font-face {
+  font-family: 'Handjet';
+  src: url('../assets/fonts/Handjet-VariableFont_ELGR,ELSH,wght.woff') 
+  format('woff'); /* Adjusted path */
+}
+
+.question{
+  font-family: 'Handjet';
+  font-size: 2.5vw;
+  text-decoration: rtl;
+  color:chartreuse
+}
+
+.katex { font-size: 1.8em; 
+  color:chartreuse;
+}
+
+.option1{
+  color: chartreuse;
+  font-family: 'Handjet';
+  font-size: 3.5vw;
+  position: absolute;
+  right: 26vw;
+}
+.option2{
+  color: chartreuse;
+  font-family: 'Handjet';
+  font-size: 3.5vw;
+  position: absolute;
+  right: 40vw;
+}
+.option1Ans{
+  position: absolute;
+  width:5vw;
+  height:3vh;
+  border: chartreuse solid 3px;
+  background-color: rgb(70, 69, 69);
+  right:34vw;
+  top:32vh;
+}
+.option2Ans{
+  position: absolute;
+  width:5vw;
+  height:3vh;
+  border: chartreuse solid 3px;
+  background-color: rgb(70, 69, 69);
+  right:20vw;
+  top:32vh;
+}
