@@ -1,35 +1,42 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BlockMath } from 'react-katex';
 import 'katex/dist/katex.min.css';
-import TaskOneData from '../data';
 import './First.css';
 
 function TaskOne() {
-  const question = TaskOneData.questions[0]; // Access the first question
-
-  // Initialize state unconditionally
+  const [question, setQuestion] = useState(null);
   const [inputValue, setInputValue] = useState('');
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch('/escape-room/data.json'); 
+        console.log("Response status:", response.status); // Log the status
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+        setQuestion(data.questions[0]); // Access the first question
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+    fetchData();
+  }, []);
+
+  if (!question) {
+    return <div>Loading...</div>; // Loading state
+  }
 
   const handleChange = (event) => {
     const value = event.target.value;
-    console.log("Current input:", value);
-  
-    // Check if the input contains letters
     const containsLetters = /[a-zA-Zא-ת]/.test(value);
-    console.log("Contains letters:", containsLetters);
-  
     if (!containsLetters) {
-      setInputValue(value); // Update state only if the value does not contain letters
-      console.log("Valid input:", value);
-    } else {
-      console.log("Invalid input: contains letters");
+      setInputValue(value);
     }
   };
-  
 
-
-  // Validation Logic, trimming whitespace
-  const trimmedInput = inputValue.replace(/\s+/g, ''); // Remove all spaces
+  const trimmedInput = inputValue.replace(/\s+/g, '');
   const isCorrect = trimmedInput === question.correctAnswer.replace(/\s+/g, '') || 
                     trimmedInput === question.correctAnswer2.replace(/\s+/g, '');
 
@@ -45,7 +52,7 @@ function TaskOne() {
         className='option1Ans'
         value={inputValue}
         onChange={handleChange}
-        placeholder="הכנס תשובה (כגון: 4,-4)"
+        placeholder="הכנס תשובה (כגון: 7,5)"
         style={{
           backgroundColor: isCorrect ? 'lightgreen' : (inputValue ? 'red' : '')
         }}

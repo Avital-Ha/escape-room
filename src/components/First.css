@@ -62,10 +62,10 @@
 
 .option1Ans{
   position: absolute;
-  width:13vw;
-  height:3vh;
+  width: 13vw;
+  height: 3vh;
   border: chartreuse solid 3px;
   background-color: rgb(70, 69, 69);
-  right:20vw;
-  top:32vh;
+  right: 17vw;
+  top: 45vh;
 }
